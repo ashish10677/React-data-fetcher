@@ -8,16 +8,16 @@ export function fetchInfo() {
     })
     .then(response => response.json())
     .then(json => {
-      console.log(json)
-      dispatch(loadInfo(json))
+      console.log(json);
+      dispatch(loadInfo(json));
     })
     .catch(error => console.log(error));
-  }
+  };
 }
 
 export function loadInfo(results) {
   return {
     type : INFO_FETCHED,
     payload : results
-  }
+  };
 }

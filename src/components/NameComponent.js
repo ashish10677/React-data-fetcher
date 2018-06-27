@@ -10,7 +10,7 @@ class NameComponent extends Component {
   }
 
   componentDidMount() {
-    console.log('mounted')
+    console.log('mounted');
   }
 
   componentWillReceiveProps(nextProps) {
@@ -18,11 +18,11 @@ class NameComponent extends Component {
       if(nextProps.user_name.indexOf(' ')>-1) {
         this.setState({
           name_displayed : 'Full name'
-        })
+        });
       } else {
         this.setState({
           name_displayed : 'First name'
-        })
+        });
       }
     }
   }

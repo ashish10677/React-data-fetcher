@@ -27,7 +27,7 @@ class App extends Component {
   render() {
 
     const selectList = this.props.info.map(item => {
-      return { value : item.name, label : item.name }
+      return { value : item.name, label : item.name };
     });
 
     return (
@@ -35,7 +35,7 @@ class App extends Component {
         <Navbar inverse collapseOnSelect>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="#">Victory Page!</a>
+              <a href="#"> Victory Page! </a>
             </Navbar.Brand>
           </Navbar.Header>
           <Nav pullRight>
